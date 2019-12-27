@@ -4,7 +4,7 @@ cost = int(input('Введите издержки:\n'))
 if income > cost:
     profit = income - cost
     profitability = profit/income
-    print (f"Прибыль организации: {profit} рентабельность: {profit/income}")
+    print (f"Прибыль организации: {profit} рентабельность: {profitability:0.2f}")
     
     employee_count = int(input('Введите кадровую численность:\n'))
     profit_per_employee = profit/employee_count
