@@ -15,5 +15,5 @@ def sum_f(list_to_sum):
     return result
 
 while not exit_request:
-    list_to_sum = input("Введите числа, разделяя пробелом, 'quit' для выхода: ").split(' ')
+    list_to_sum = input("Введите числа, разделяя пробелом, 'quit' для выхода: ").split()
     print(sum_f(list_to_sum))
