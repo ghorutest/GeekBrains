@@ -5,7 +5,7 @@ def exponentiation(x, y):
 def exponentiation_cycle(x, y):
     """Returns a negative power of a number"""
     res = x
-    for i in range(y + 1, 0):
+    for _ in range(y + 1, 0):
         res *= x
     return (1 / res)
 
