@@ -1,10 +1,16 @@
-n = 20
+from itertools import count
+
+limit = 15
+
 
 def fact(n):
-    res = 1
-    for num in range(1, n + 1):
-        res *= num
-        yield res, num
+    result = 1
+    for number in count(1):
+        if number > n:
+            break
+        result *= number
+        yield result, number
 
-for res, num in fact(n):
+
+for res, num in fact(limit):
     print(f'{num}! = {res}')
